@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-Time App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Real-Time Communication</h1>
+  <div id="video-grid">
+  <video id="localVideo" autoplay muted></video>
+</div>
+
+<div id="controls">
+  <button id="muteBtn">🎙️ Mute</button>
+  <button id="videoBtn">🎥 Stop Video</button>
+  <button id="screenBtn">📤 Share Screen</button>
+  <button id="chatBtn">💬 Chat</button>
+  <button id="whiteboardBtn">🖊 Whiteboard</button>
+  <button id="fileBtn">📎 File</button>
+  <button id="leaveBtn">🔚 Leave</button>
+</div>
+
+<div id="chat" hidden>
+  <textarea id="chatArea" disabled></textarea>
+  <input type="text" id="chatInput" placeholder="Type a message..." />
+</div>
+
+  
+
+  <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+</html>
